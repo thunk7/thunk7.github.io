@@ -5,5 +5,5 @@
   "background_color": "#ffffff",
   "display": "standalone",
   "scope": "/app/",
-  "start_url": "/https://thunk7.github.io"
+  "start_url": "https://thunk7.github.io"
 }
