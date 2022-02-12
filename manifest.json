@@ -1,0 +1,9 @@
+{
+  "name": "UoM-Track",
+  "short_name": "uomTrack",
+  "theme_color": "#2196f3",
+  "background_color": "#ffffff",
+  "display": "standalone",
+  "scope": "/app/",
+  "start_url": "/https://thunk7.github.io"
+}
