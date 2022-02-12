@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
+table {
+    font-family: 'Raleway', sans-serif;
+    border-collapse: collapse;
+    border-radius: 0.5em;
+    overflow: hidden;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    table-layout: fixed;
+}
+
+.header {
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    border: 1px solid;
+    border-radius: 0.5em;
+    padding: 8px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+    background-color: #2a9e73;
+    color: white;
+}
+
+th {
+    border: 1px solid;
+    padding: 8px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+    background-color: #2a9e73;
+    color: white;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+}
+
+th:hover {
+    transform: scale(1.1);
+    background-color: #12855a;
+}
+
+td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    background-color: #f2f2f2;
+}
+
+button.duplicate {
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 0.5em;
+    background-color: #2a9e73;
+    color: white;
+    transition: all .2s ease-in-out;
+}
+
+button.duplicate:hover {
+    transform: scale(1.1);
+    background-color: #12855a;
+}
+
+button.delete {
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 0.5em;
+    background-color: #d43737;
+    color: white;
+    transition: all .2s ease-in-out;
+}
+
+button.delete:hover {
+    transform: scale(1.15);
+    background-color: #f00b0b;
+}
+
+.stats {
+    display: block;
+    width: auto;
+    border: none;
+    background-color: #ddd;
+    border-bottom-left-radius: 0.5em;
+    border-bottom-right-radius: 0.5em;
+    padding: 14px 28px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+button.statsbtn {
+    display: block;
+    width: 100%;
+    border: none;
+    background-color: #ddd;
+    padding: 14px 28px;
+    cursor: pointer;
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+button.statsbtn:hover {
+    background-color: #2a9e73;
+    color: white;
+}
+
+.reload {
+    display: block;
+    width: 98%;
+    padding: 8px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+button.reload {
+    display: block;
+    width: 100%;
+    border: none;
+    padding: 14px 28px;
+    cursor: pointer;
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    text-align: center;
+    transition: all .2s ease-in-out;
+    border-radius: 0.5em;
+}
+
+button.reload:hover {
+    transform: scale(1.02);
+}

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="Spyridon Kavvadias">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UOM-Track</title>
+    <link rel="stylesheet" href="uomTrack.css">
+    <script src="uomTrack.js" defer></script>
+</head>
+
+<body>
+    <table id="uomTrack">
+        <div class="header"><span id="title"></span></div>
+        <thead>
+        </thead>
+        <tr>
+            <th onclick="sortTable(0)" title="Click To Sort by Country">Country</th>
+            <th onclick="sortTable(1)" title="Click To Sort by Name">Name</th>
+            <th onclick="sortTable(2)" title="Click To Sort by Personal Best">Personal Best</th>
+            <th onclick="sortTable(3)" title="Click To Sort by Time">Time</th>
+            <th onclick="addRow()" title="Click To Add A New Line">Add A New Line</th>
+        </tr>
+        <tr>
+            <td contenteditable="true" title="Click To Edit Cell">GRE</td>
+            <td contenteditable="true" title="Click To Edit Cell">Takis P.</td>
+            <td contenteditable="true" title="Click To Edit Cell">10.01</td>
+            <td contenteditable="true" title="Click To Edit Cell">10.01</td>
+            <td>
+                <button class="duplicate" onclick="cloneRow(this)"><i class="fa fa-copy"></i> Duplicate Row</button>
+                <button class="delete" onclick="deleteRow(this)"><i class=" fa fa-trash"></i> Delete Row</button>
+            </td>
+        </tr>
+        <tr>
+            <td contenteditable="true" title="Click To Edit Cell">ITA</td>
+            <td contenteditable="true" title="Click To Edit Cell">Carlo T.</td>
+            <td contenteditable="true" title="Click To Edit Cell">10.02</td>
+            <td contenteditable="true" title="Click To Edit Cell">10.03</td>
+            <td>
+                <button class="duplicate" onclick="cloneRow(this)"><i class="fa fa-copy"></i> Duplicate Row</button>
+                <button class="delete" onclick="deleteRow(this)"><i class=" fa fa-trash"></i> Delete Row</button>
+            </td>
+        </tr>
+        <tr>
+            <td contenteditable="true" title="Click To Edit Cell">USA</td>
+            <td contenteditable="true" title="Click To Edit Cell">Peter F.</td>
+            <td contenteditable="true" title="Click To Edit Cell">10.03</td>
+            <td contenteditable="true" title="Click To Edit Cell">10.05</td>
+            <td>
+                <button class="duplicate" onclick="cloneRow(this)"><i class="fa fa-copy"></i> Duplicate Row</button>
+                <button class="delete" onclick="deleteRow(this)"><i class=" fa fa-trash"></i> Delete Row</button>
+            </td>
+        </tr>
+        <tr>
+            <td contenteditable="true" title="Click To Edit Cell">GER</td>
+            <td contenteditable="true" title="Click To Edit Cell">Johan C.</td>
+            <td contenteditable="true" title="Click To Edit Cell">10.04</td>
+            <td contenteditable="true" title="Click To Edit Cell">10.07</td>
+            <td>
+                <button class="duplicate" onclick="cloneRow(this)"><i class="fa fa-copy"></i> Duplicate Row</button>
+                <button class="delete" onclick="deleteRow(this)"><i class=" fa fa-trash"></i> Delete Row</button>
+            </td>
+        </tr>
+        <tr>
+            <td contenteditable="true" title="Click To Edit Cell">TUR</td>
+            <td contenteditable="true" title="Click To Edit Cell">Arkan K.</td>
+            <td contenteditable="true" title="Click To Edit Cell">10.05</td>
+            <td contenteditable="true" title="Click To Edit Cell">10.09</td>
+            <td>
+                <button class="duplicate" onclick="cloneRow(this)"><i class="fa fa-copy"></i> Duplicate Row</button>
+                <button class="delete" onclick="deleteRow(this)"><i class=" fa fa-trash"></i> Delete Row</button>
+            </td>
+        </tr>
+        <tfoot>
+        </tfoot>
+    </table>
+    <div><button class="statsbtn" onclick="getMinMaxAverage()">Get Race Stats</button></div>
+    <div class="stats"><span id="minV"></span><span id="maxV"></span><span id="sumV"></span><span id="avgV"></span></div>
+    <div class="reload"><button class="reload" onclick="reload()">Start Over</button></div>
+</body>
+
+</html>
