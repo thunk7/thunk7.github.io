@@ -79,6 +79,13 @@
     <div><button class="statsbtn" onclick="getMinMaxAverage()">Get Race Stats</button></div>
     <div class="stats"><span id="minV"></span><span id="maxV"></span><span id="sumV"></span><span id="avgV"></span></div>
     <div class="reload"><button class="reload" onclick="reload()">Start Over</button></div>
+    <script>
+        if('serviceWorker' in navigator) {
+            navigator.serviceWorker
+                .register('/sw.js')
+                .then(function() { console.log("Service Worker Registered"); });
+}
+</script>
 </body>
 
 </html>
