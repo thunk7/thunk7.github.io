@@ -1,15 +1,22 @@
-self.addEventListener('install', function(event) {
+self.addEventListener('install', function (event) {
+    console.log('The service worker is being installed.');
     event.waitUntil(
-        caches.open('v1').then(function(cache) {
+        caches.open('to-do').then(function(cache) {
             return cache.addAll([
-                '/uomTrack.html',
+                '/index.html',
+                '/uomTrack.js',
                 '/uomTrack.css',
-                '/uomTrack.js'
+                '/manifest.json'
             ]);
         })
     );
 });
 
-self.addEventListener('fetch', function(event) {
-    event.respondWith(caches.match(event.request));
+self.addEventListener('fetch', function (event) {
+    console.log('The service worker is serving the asset.');
+    event.respondWith(
+        caches.match(event.request).then(function (response) {
+            return response || caches.match('/index.html');
+        })
+    );
 });
