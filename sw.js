@@ -1,7 +1,7 @@
 self.addEventListener('install', function (event) {
     console.log('The service worker is being installed.');
     event.waitUntil(
-        caches.open('uomTrack').then(function(cache) {
+        caches.open('v1').then(function(cache) {
             return cache.addAll([
                 '/index.html',
                 '/uomTrack.js',
