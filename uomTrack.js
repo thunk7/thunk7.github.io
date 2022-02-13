@@ -5,6 +5,24 @@ if (title != null) {
     document.getElementById('title').innerHTML = title;
 }
 
+// Checks if we can use serviceWorker.
+if ("serviceWorker" in navigator) {
+    navigator.serviceWorker
+        .register("sw.js")
+        .then((registration) => {
+        
+            // The registration wass successful
+            console.log("Service worker registered");
+            console.log(registration);
+        })
+        .catch((err) => {
+        
+            // The registration failed
+            console.log("Sercvice worker registration failed");
+            console.error(err);
+        });
+}
+
 const table = document.getElementById('uomTrack');
 const reloadButton = document.querySelector('.reload');
 
