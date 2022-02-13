@@ -35,9 +35,13 @@ function reload() {
 }
 reloadButton.addEventListener('click', reload, false);
 
-function addRow(n) {
-    let tr = n.parentNode.parentNode.cloneNode(true);
-    table.appendChild(tr);
+function addRow(row) {
+    var i = row.parentNode.parentNode.rowIndex;
+    var tr = document.getElementById('uomTrack').insertRow(i+1);
+    tr.innerHTML = row.parentNode.parentNode.innerHTML;
+    var inputs = tr.querySelectorAll("input[type='text']");
+    for(var i=0; i<inputs.length; i++)
+        inputs[i].value = "";
 }
 
 function cloneRow(n) {
