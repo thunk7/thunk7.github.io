@@ -1,29 +1,33 @@
 'use strict';
 
+if ('serviceWorker' in navigator) {
+    navigator.serviceWorker
+        .register('sw.js')
+        .then((registration) => {
+            console.log('Service worker registered');
+            console.log(registration);
+        })
+        .catch((err) => {
+            console.log('Sercvice worker registration failed');
+            console.error(err);
+        });
+}
+
 let title = prompt('How do you want your table named?');
 if (title != null) {
     document.getElementById('title').innerHTML = title;
 }
 
-// Checks if we can use serviceWorker.
-if ("serviceWorker" in navigator) {
-    navigator.serviceWorker
-        .register("sw.js")
-        .then((registration) => {
-        
-            // The registration wass successful
-            console.log("Service worker registered");
-            console.log(registration);
-        })
-        .catch((err) => {
-        
-            // The registration failed
-            console.log("Sercvice worker registration failed");
-            console.error(err);
-        });
+const table = document.getElementById('uomTrack');
+
+var tableContent = document.getElementById('uomTrack').innerHTML;
+localStorage.setItem('tableContent', tableContent);
+
+if (localStorage.getItem('tableContent') !== null) {
+    var tableContent = localStorage.getItem('tableContent');
+    document.getElementById('uomTrack').innerHTML = tableContent;
 }
 
-const table = document.getElementById('uomTrack');
 const reloadButton = document.querySelector('.reload');
 
 function reload() {
