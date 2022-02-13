@@ -39,9 +39,9 @@ function addRow(row) {
     var i = row.parentNode.parentNode.rowIndex;
     var tr = document.getElementById('uomTrack').insertRow(i+1);
     tr.innerHTML = row.parentNode.parentNode.innerHTML;
-    var inputs = tr.querySelectorAll("input[type='text']");
+    var inputs = tr.querySelectorAll('tr');
     for(var i=0; i<inputs.length; i++)
-        inputs[i].value = "";
+        inputs[i].value = '';
 }
 
 function cloneRow(n) {
