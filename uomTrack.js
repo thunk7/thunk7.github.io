@@ -13,7 +13,7 @@ if ('serviceWorker' in navigator) {
         });
 }
 
-let title = prompt('How do you want your table named?');
+let title = prompt('uomTrack','How do you want your table named?');
 if (title != null) {
     document.getElementById('title').innerHTML = title;
 }
