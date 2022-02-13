@@ -13,7 +13,7 @@ if ('serviceWorker' in navigator) {
         });
 }
 
-let title = prompt('Hi There!','How do you want your table named?');
+let title = prompt('Hi There! How do you want your table named?');
 if (title != null) {
     document.getElementById('title').innerHTML = title;
 }
