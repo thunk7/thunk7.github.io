@@ -18,8 +18,6 @@ if (title != null) {
     document.getElementById('title').innerHTML = title;
 }
 
-const table = document.getElementById('uomTrack');
-
 var tableContent = document.getElementById('uomTrack').innerHTML;
 localStorage.setItem('tableContent', tableContent);
 
@@ -27,6 +25,8 @@ if (localStorage.getItem('tableContent') !== null) {
     var tableContent = localStorage.getItem('tableContent');
     document.getElementById('uomTrack').innerHTML = tableContent;
 }
+
+const table = document.getElementById('uomTrack');
 
 const reloadButton = document.querySelector('.reload');
 
