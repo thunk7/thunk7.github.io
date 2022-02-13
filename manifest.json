@@ -1,9 +1,21 @@
 {
-  "name": "UoM-Track",
-  "short_name": "uomTrack",
-  "theme_color": "#2196f3",
-  "background_color": "white",
-  "display": "standalone",
-  "scope": "/app/",
-  "start_url": "/"
+    "name": "UoM-Track",
+    "short_name": "uomtrack",
+    "description": "This is a PWA created by Spyridon Kavvadias",
+    "start_url": ".",
+    "background_color": "",
+    "theme_color": "white",
+    "display": "standalone",
+    "icons": [
+        {
+            "src": "assets/logo192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "assets/logo512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ]
 }
