@@ -1,16 +1,13 @@
 'use strict';
 
 if ('serviceWorker' in navigator) {
-    navigator.serviceWorker
-        .register('sw.js')
-        .then((registration) => {
-            console.log('Service worker registered');
-            console.log(registration);
-        })
-        .catch((err) => {
-            console.log('Sercvice worker registration failed');
-            console.error(err);
-        });
+    navigator.serviceWorker.register('/sw.js').then(function(registration) {
+    console.log('Service worker registration succeeded:', registration);
+  },function(error) {
+    console.log('Service worker registration failed:', error);
+  });
+} else {
+  console.log('Service workers are not supported.');
 }
 
 let title = prompt('Hi There! How do you want your table named?');
