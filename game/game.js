@@ -28,12 +28,6 @@ canvas.addEventListener('mousemove', function (event) {
     mouse.y = event.y - canvasPosition.top;
 });
 
-canvas.addEventListener('mousedown', function (event) {
-    mouse.move = true;
-    mouse.x = event.x - canvasPosition.left;
-    mouse.y = event.y - canvasPosition.top;
-});
-
 canvas.addEventListener('mouseout', function (_event) {
     mouse.move = false;
 });
