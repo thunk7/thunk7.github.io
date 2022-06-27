@@ -15,10 +15,8 @@ this.addEventListener('install', function(event) {
                 '/whyisitimportant.html',
                 '/whatcanbedone.html',
                 '/manifest.json',
-                '/sw.js',
                 '/assets',
                 '/assets/icons/icon128.png',
-                '/assets/icons/icon256.png',
                 '/assets/icons/icon512.png'
             ]);
         })
