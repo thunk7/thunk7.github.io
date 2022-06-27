@@ -277,7 +277,7 @@ function gameOver1() {
         if (event.key === 'Enter')
             window.location.reload();
         else if (event.key === 'Backspace') {
-            document.location.replace('../play.html');
+            document.location.replace('../index.html');
         }
     });
 }
@@ -292,7 +292,7 @@ function gameOver2() {
         if (event.key === 'Enter')
             window.location.reload();
         else if (event.key === 'Backspace') {
-            document.location.replace('../play.html');
+            document.location.replace('../index.html');
         }
     });
 }
