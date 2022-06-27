@@ -1,0 +1,25 @@
+{
+    "name": "Save the Ocean",
+    "short_name": "Save the Ocean",
+    "description": "Serious game created by Spyridon Kavvadias",
+    "start_url": ".",
+    "background_color": "",
+    "theme_color": "white",
+    "display": "standalone",
+    "icons": [{
+            "src": "assets/icons/icon128.png",
+            "sizes": "128x128",
+            "type": "image/png"
+        },
+        {
+            "src": "assets/icons/icon256.png",
+            "sizes": "256x256",
+            "type": "image/png"
+        },
+        {
+            "src": "assets/icons/icon512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ]
+}
