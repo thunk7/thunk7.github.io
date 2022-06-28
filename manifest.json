@@ -1,0 +1,23 @@
+{
+  "name": "Save the Ocean",
+  "short_name": "SaveTheOcean",
+  "start_url": "index.html",
+  "display": "standalone",
+  "background_color": "#fdfdfd",
+  "theme_color": "#db4938",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/game/icons/icon128.png",
+      "type": "image/png", "sizes": "128x128"
+    },
+    {
+      "src": "/game/icons/icon256.png",
+      "type": "image/png", "sizes": "256x256"
+    },
+    {
+      "src": "/game/icons/icon512.png",
+      "type": "image/png","sizes": "512x512"
+    }
+  ]
+}
