@@ -1,10 +1,10 @@
 {
-  "name": "Save the Ocean",
-  "short_name": "SaveTheOcean",
+  "name": "Save The Ocean",
+  "short_name": "Save The Ocean",
   "start_url": "index.html",
   "display": "standalone",
   "background_color": "#fdfdfd",
-  "theme_color": "#db4938",
+  "theme_color": "#3941db",
   "orientation": "portrait-primary",
   "icons": [
     {
